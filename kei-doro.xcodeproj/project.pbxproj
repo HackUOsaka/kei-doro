@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		728A4CB02B98483C00CAFD73 /* NFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728A4CAF2B98483C00CAFD73 /* NFCView.swift */; };
+		728A4CB42B992B2200CAFD73 /* NFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728A4CB32B992B2200CAFD73 /* NFCViewModel.swift */; };
 		9E898D902B974E4E003CB854 /* kei_doroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E898D8F2B974E4E003CB854 /* kei_doroApp.swift */; };
-		9E898D922B974E4E003CB854 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E898D912B974E4E003CB854 /* ContentView.swift */; };
 		9E898D942B974E4F003CB854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E898D932B974E4F003CB854 /* Assets.xcassets */; };
 		9E898D972B974E4F003CB854 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E898D962B974E4F003CB854 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		728A4CAF2B98483C00CAFD73 /* NFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCView.swift; sourceTree = "<group>"; };
+		728A4CB32B992B2200CAFD73 /* NFCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewModel.swift; sourceTree = "<group>"; };
 		9E898D8C2B974E4E003CB854 /* kei-doro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kei-doro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E898D8F2B974E4E003CB854 /* kei_doroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kei_doroApp.swift; sourceTree = "<group>"; };
-		9E898D912B974E4E003CB854 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9E898D932B974E4F003CB854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E898D962B974E4F003CB854 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +34,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		728A4CB12B992AD900CAFD73 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				728A4CB22B992B0900CAFD73 /* LoginPage */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		728A4CB22B992B0900CAFD73 /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				728A4CB72B992BF900CAFD73 /* Views */,
+				728A4CB82B992C0000CAFD73 /* ViewModels */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		728A4CB52B992B3F00CAFD73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		728A4CB62B992B8A00CAFD73 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		728A4CB72B992BF900CAFD73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				728A4CAF2B98483C00CAFD73 /* NFCView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		728A4CB82B992C0000CAFD73 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				728A4CB32B992B2200CAFD73 /* NFCViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		9E898D832B974E4E003CB854 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +100,10 @@
 		9E898D8E2B974E4E003CB854 /* kei-doro */ = {
 			isa = PBXGroup;
 			children = (
+				728A4CB62B992B8A00CAFD73 /* Colors */,
+				728A4CB52B992B3F00CAFD73 /* Models */,
+				728A4CB12B992AD900CAFD73 /* Pages */,
 				9E898D8F2B974E4E003CB854 /* kei_doroApp.swift */,
-				9E898D912B974E4E003CB854 /* ContentView.swift */,
 				9E898D932B974E4F003CB854 /* Assets.xcassets */,
 				9E898D952B974E4F003CB854 /* Preview Content */,
 			);
@@ -137,7 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E898D922B974E4E003CB854 /* ContentView.swift in Sources */,
+				728A4CB42B992B2200CAFD73 /* NFCViewModel.swift in Sources */,
+				728A4CB02B98483C00CAFD73 /* NFCView.swift in Sources */,
 				9E898D902B974E4E003CB854 /* kei_doroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kei-doro/Preview Content\"";
+				DEVELOPMENT_TEAM = TVH687AC7F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kei-doro/Preview Content\"";
+				DEVELOPMENT_TEAM = TVH687AC7F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
