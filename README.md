@@ -12,7 +12,7 @@
 │
 ├── kei-doro/
 │   ├── Pages/
-│   │   └── XXXPages/
+│   │   └── XXXPage/
 │   │       ├── Views/
 │   │       └── ViewModels/
 │   │
